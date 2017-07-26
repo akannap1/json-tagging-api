@@ -24,7 +24,7 @@
 - Go to App Direcory
 - Run RAILS_ENV=test rake db:create
 - Run RAILS_ENV=test rake db:migrate
-- Run `rspec` 
+- Run `rspec spec -f doc` 
 
 ```
 
