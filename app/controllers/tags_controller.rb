@@ -54,13 +54,9 @@ class TagsController < ApplicationController
   private
 
   # Use callbacks to share common setup or constraints between actions.
-  def set_tag
-    @tag = Tag.find(params[:id])
-  end
 
-  def set_entity_typer
-    @set_entity_type = EntityType.find_by(name: tag_params['entity_type'])
-    raise ActiveRecord::RecordNotFound  unless @set_entity_type
+  def set_entity_type
+    @set_entity_type = EntityType.find_by!(name: tag_params['entity_type'])
   rescue ActiveRecord::RecordNotFound => error
     render json: { message: 'RecordNotFound' }, status: 400
   end
