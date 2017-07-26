@@ -11,17 +11,22 @@
 * bundle install (Do it in the Current directory)
 
 ### Start json-tagging-Api 
-* Go to App Directory
-* rake db:create 
-* rake db:migrate 
-* Run `rails s`
+```
+- Go to App Directory
+- rake db:create 
+- rake db:migrate 
+- Run `rails s`
 
+```
 
 ### Run Tests 
-* Go to App Direcory
-* Run RAILS_ENV=test rake db:create
-* Run RAILS_ENV=test rake db:migrate
-* Run `rspec` 
+```
+- Go to App Direcory
+- Run RAILS_ENV=test rake db:create
+- Run RAILS_ENV=test rake db:migrate
+- Run `rspec` 
+
+```
 
 ### Api Request information 
 
@@ -32,18 +37,22 @@ Create an Entry
 - e.g. request {"entity_type": "product", "entity_identifier": "111-33440-222", "tag": ["quantity","price","size"] }
 
 ```
-
-* Retreive Entity Tags for an entity
-GET /tags/:entity_type/:entity_id
-
-* To Retrieve Stats about a specific Entity type
-GET /stats/:entity_type
-
-* To Remove an Entry 
-DELETE /tags/:entity_type/:entity_id
-
-* To Retrieve Stats about all Tags
- GET /stats
+```
+Retreive Entity Tags for an entity
+- GET /tags/:entity_type/:entity_id
+```
+```
+To Retrieve Stats about a specific Entity type
+- GET /stats/:entity_type
+```
+```
+To Remove an Entry 
+- DELETE /tags/:entity_type/:entity_id
+```
+```
+To Retrieve Stats about all Tags
+- GET /stats
+```
 
 ## Testing the Api 
 * Install Postman for testing json-tagging api [Postman](https://www.getpostman.com/)
