@@ -1,7 +1,7 @@
-# json-tagging-api
+# Json-Tagging-Api
 
 ### Description 
-* Simple Command line tool for searching through json files
+*  Generic Tagging JSON API that can store, retrieve, delete and report on the usage of a "tag" across different entities
 
 ### Setup
 * Install latest version of [ruby](https://www.ruby-lang.org/en/documentation/installation/).
