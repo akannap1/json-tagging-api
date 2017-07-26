@@ -25,10 +25,13 @@
 
 ### Api Request information 
 
-* Create an Entry
--post  POST /tag
--To create send request in body as json 
--e.g. request {"entity_type": "product", "entity_identifier": "111-33440-222", "tag": ["quantity","price","size"] }
+```
+Create an Entry
+- post  POST /tag
+- To create send request in body as json 
+- e.g. request {"entity_type": "product", "entity_identifier": "111-33440-222", "tag": ["quantity","price","size"] }
+
+```
 
 * Retreive Entity Tags for an entity
 GET /tags/:entity_type/:entity_id
